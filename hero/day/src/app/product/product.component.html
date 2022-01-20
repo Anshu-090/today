@@ -1,0 +1,19 @@
+<p>product works!</p>
+<table border="2px solid">
+    <tr>
+        <th>name</th>
+        <th>city</th>
+        <th>id</th>
+        <th>salary</th>
+        <th>dob</th>
+
+    </tr>
+    <tr *ngFor="let u of users">
+         <td>{{u.name|uppercase}}</td> <!-- these are pre defined pipes -->
+        <td>{{u.city|titlecase}}</td>
+        <td>{{u.id|percent}}</td>
+        <td>{{u.salary|currency:'INR'}}</td> 
+        <td>{{u.dob|date:'dd/MM/yyyy'}}</td>
+        <td>{{u.dob|age}}</td>
+    </tr>
+</table>

@@ -1,0 +1,25 @@
+ 
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">name</th>
+        <th scope="col">username</th>
+        <th scope="col">email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor= "let u of result">
+
+        <td>{{u.id}}</td>
+        <td>{{u.name|uppercase}}</td>
+        <td>{{u.username|lowercase}}</td>
+        <td>{{u.email}}</td>
+      </tr>
+     
+      
+    </tbody>
+  </table>
+  
+   
+
